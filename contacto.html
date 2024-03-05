@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre nosotros</title>
+    <link rel="icon" href="Multimedia/OIG.png">
+    <link rel="stylesheet" href="sobre nosotros.css">
+    <link rel="stylesheet" href="normalize.css">
+    <script src="https://kit.fontawesome.com/0f0bbeadd4.js" crossorigin="anonymous"></script> <!-- script para implementar iconos-->
+</head>
+<body>
+<nav>
+            
+        <!--menu de la pagina web-->       
+    <ul class="menu">
+        <li class="icono_inicio1"><a href="index.html"><img src="Multimedia/OIG.png" alt="icono de ia" class="icono_inicio"></a></li>
+        <li class="menu_1" ><div id="Alumnos">Alumnos</div></li>
+        <li class="menu_1" ><div id="padres">Padres</div></li>
+        <li class="menu_1" ><div id="sobre_nosotros">Sobre nosotros</div></li>
+    </ul>
+</nav>
+    <main>
+        <ul class="ul">
+            <li><button id="nosotros">Quienes somos</button></li>
+            <li><div id="informacion" class="informacion"></div></li>
+            <br>
+            <li><button id="objetivo">Nuestro objetivo</button></li>
+            <li><div id="informacion2" class="informacion"></div></li>
+            <br>
+            <li><button id="ubicacion">Donde estamos</button></li>
+            <div id="informacion3" class="informacion"></div><li></li>
+        </ul>
+    </main>
+    <!--scrript para ocultar los desplegables de la pagina-->
+    <script>
+        document.getElementById('Alumnos').addEventListener('click', function() { 
+            window.location.href = 'Alunmnos/Alumnos.html';
+        });
+        document.getElementById('padres').addEventListener('click', function() { 
+            window.location.href = 'Padres/Padres.html';
+        });
+        document.getElementById('sobre_nosotros').addEventListener('click', function() { 
+            window.location.href = '/contacto.html';
+        });
+    </script>
+    <script>
+    var informacionDiv = document.getElementById('informacion'); 
+    var informacionDiv2 = document.getElementById('informacion2');
+    var informacionDiv3 = document.getElementById('informacion3');
+    var abierto = false;
+    var abierto2 = false;
+    var abierto3 = false;
+    document.getElementById('nosotros').addEventListener("click", function() {
+    abrirInformacion();
+    });
+    document.getElementById('objetivo').addEventListener("click", function(){
+        abririnformacion2();
+    })
+    document.getElementById('ubicacion').addEventListener("click", function(){
+        abririnformacion3();
+    })
+
+
+function abrirInformacion() {
+    
+    if (abierto === false) {  
+            informacionDiv.innerHTML = "<p>Centro de Formación Profesional especializado en Marketing, Publicidad e Informática, donde la excelencia educativa y la innovación se fusionan para impulsar el desarrollo integral de nuestros estudiantes. En el corazón de nuestra misión se encuentra el compromiso de proporcionar conocimientos teóricos sólidos y experiencias prácticas relevantes. Nos enorgullece ser un referente en la capacitación de profesionales altamente cualificados, capaces de destacar en los campos dinámicos y siempre evolucionados del marketing digital, la publicidad creativa y la informática avanzada.   </p>";
+            abierto = true; 
+        
+        } else  {
+            informacionDiv.innerHTML = "<p></p>";
+            abierto = false; 
+        }
+    
+    }
+    function abririnformacion2(){
+        if (abierto2 === false){
+                informacionDiv2.innerHTML = "<p> Impulsar el desarrollo integral de nuestros estudiantes, proporcionándoles conocimientos teóricos sólidos y experiencias prácticas relevantes. Buscamos fomentar habilidades técnicas y creativas que les permitan destacar en los campos del marketing, la publicidad y la informática.</p>"
+                abierto2 = true;
+            } else {
+                informacionDiv2.innerHTML = "<p></p>";
+                abierto2 = false; 
+        }
+
+    }
+    function abririnformacion3(){
+        if (abierto3 === false){
+                informacionDiv3.innerHTML = '<p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2905.779752654572!2d-2.9072232240197824!3d43.25603757112371!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4e4fad9eb9fc7b%3A0xf2d53aaeac11dfc9!2sOrnilla%20Doctor%20Kalea%2C%20Otxarkoaga%20-%20Txurdinaga%2C%20Bilbo%2C%20Bizkaia!5e0!3m2!1ses!2ses!4v1703156855475!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></p>';
+                abierto3 = true;
+            } else {
+                informacionDiv3.innerHTML = "<p></p>";
+                abierto3 = false; 
+        }
+
+    }
+    </script>
+    <footer class="footer">
+        <p class="footer_info"><b>© 2023. FP IA. <br>
+            C/ Doctor Ornilla 2</b>
+        </p>
+        <img src="Multimedia/Logotipo_del_Gobierno_Vasco_(Horizontal).svg.png" alt="logotipo gonbierno vasco" class="logogob">
+        <div class="div_rrss"><a href="https://www.instagram.com/" target="_blank"><img src="Multimedia/instagram.ico" alt="icono instagram " class="div_rrss-icon"></i></a> 
+        <a href="https://www.facebook.com/"target="_blank"><img src="Multimedia/facebook.ico" alt="icono facebook" class="div_rrss-icon"></i></i></a> 
+        <a href="https://twitter.com/"target="_blank"></i><img src="Multimedia/x-twitter.ico" alt="icono x twitter" class="div_rrss-icon"></a></div>
+    </footer>
+</body>
+
+</html>

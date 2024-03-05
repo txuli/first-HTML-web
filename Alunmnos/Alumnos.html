@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alumnos</title>
+    <link rel="stylesheet" href="alumnos.css">
+    <link rel="stylesheet" href="../normalize.css">
+</head>
+<body>
+    <nav>     
+        <!--menu de la pagina web-->       
+    <ul class="menu">
+        <li class="icono_inicio1"><a href="../index.html"><img src="../Multimedia/OIG.png" alt="" class="icono_inicio"></a></li>
+        <li class="menu_1" ><div id="Alumnos">Alumnos</div></li>
+        <li class="menu_1" ><div id="padres">Padres</div></li>
+        <li class="menu_1" ><div id="sobre_nosotros">Sobre nosotros</div></li>
+    </ul>
+   </nav>
+   <main>
+        <h1>Zona de alumnos</h1>
+        <p>¡Bienvenidos a nuestro portal educativo! Aquí, los alumnos encontrarán recursos y enlaces directos a plataformas como Google Classroom y Moodle, así como acceso a bibliotecas digitales y herramientas especializadas. Facilitamos el acceso a cursos en línea y proporcionamos recursos adicionales, como tutoriales y guías de estudio. Queremos ser tu punto de partida para descubrir un mundo de posibilidades académicas. ¡Explora, aprende y crece con nosotros! El equipo educativo de IA</p>
+        <section class="list-section">
+            <h3>links</h3>
+            <ol type="I" class="ordered_list">
+                <li class="ordered_list-item"><a href="#">moodle</a></li>
+                <li class="ordered_list-item"><a href="#">Classroom</a></li>
+            </ol>
+        </section>
+        <section class="calendar_exams_section">
+            <div class="calendar"><iframe src="https://calendar.google.com/calendar/embed?height=400&wkst=2&bgcolor=%23A79B8E&ctz=Europe%2FMadrid&showTitle=0&showPrint=0&showCalendars=0&src=M2ZjNDcxZGI4N2NjZjMzZWRjMTE4MjRhMGIxMmJjN2FmZTQ0ZDMzYzA1ODM2ODRiYmI3M2RhYWMxOTM4NWY0NkBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&src=ZXMuc3BhaW4jaG9saWRheUBncm91cC52LmNhbGVuZGFyLmdvb2dsZS5jb20&color=%238E24AA&color=%230B8043" style="border:solid 1px #777" width="500" height="400" frameborder="0" scrolling="no"></iframe></div>
+            <div class="calendar_exams_section-exams">
+                <table border="1" class="table" > <!-- Añade el atributo border para visualizar los bordes de la tabla -->
+                    <thead>
+                        <tr>
+                            <th colspan="5">Fechas de examenes </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="table_item">Lunes 15 de enero</td>
+                            <td class="table_item">Martes 16 de enero</td>
+                            <td class="table_item">Miércoles 17 de enero</td>
+                            <td class="table_item">Jueves 18 de enero</td>
+                            <td class="table_item">Viernes 19 de enero</td>
+                        </tr>
+                        <tr>
+                            <td class="table_item">AWEB Y Comportamiento del Consumidor</td>
+                            <td class="table_item">AOFI Y Investigación de Mercados</td>
+                            <td class="table_item">EIE Y Publicidad y Promoción</td>
+                            <td class="table_item">SOR Y Gestión de Productos y Marcas</td>
+                            <td class="table_item">REDES Y Ventas y Negociación</td>
+                        </tr>
+                        <!-- Agrega más filas según sea necesario -->
+                    </tbody>
+                </table>
+            </div>
+        </section>
+   <script>
+    document.getElementById('Alumnos').addEventListener('click', function() { 
+        window.location.href = '../Alunmnos/Alumnos.html';
+    });
+    document.getElementById('padres').addEventListener('click', function() { 
+        window.location.href = '../Padres/Padres.html';
+    });
+    document.getElementById('sobre_nosotros').addEventListener('click', function() { 
+        window.location.href = '../contacto.html';
+    });
+</script>
+   <footer class="footer">
+        <p class="footer_info"><b>© 2023. FP IA. <br>
+        C/ Doctor Ornilla 2</b>
+        </p>
+        <img src="../Multimedia/Logotipo_del_Gobierno_Vasco_(Horizontal).svg.png" alt="logotipo gonbierno vasco" class="logogob">
+        <div class="div_rrss"><a href="https://www.instagram.com/" target="_blank"><img src="../Multimedia/instagram.ico" alt="icono instagram " class="div_rrss-icon"></i></a> 
+        <a href="https://www.facebook.com/"target="_blank"><img src="../Multimedia/facebook.ico" alt="icono facebook" class="div_rrss-icon"></i></i></a> 
+        <a href="https://twitter.com/"target="_blank"></i><img src="../Multimedia/x-twitter.ico" alt="icono x twitter" class="div_rrss-icon"></a></div>
+    </footer>
+</body>
+</html>

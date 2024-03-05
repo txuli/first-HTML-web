@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IA</title>
+    <link rel="stylesheet" href="index.css"><!--linea para vincular la hoja de estilos-->
+    <link rel="stylesheet" href="normalize.css"> <!-- linea para vincular el archivo normalice-->
+    <script src="https://kit.fontawesome.com/0f0bbeadd4.js" crossorigin="anonymous"></script> <!-- script para implementar iconos-->
+    <link rel="icon" href="Multimedia/OIG.png "> <!--icono de la pagina-->
+    <!--esta linea es para usar fuentes externas-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Croissant+One&family=Lora&family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+
+         <!--menu de la pagina web-->       
+     <ul class="menu">
+        <li class="icono_inicio1"><a href="index.html"><img src="Multimedia/OIG.png" alt="" class="icono_inicio"></a></li>
+        <li class="menu_1" ><div id="Alumnos">Alumnos</div>    
+         <li class="menu_1" ><div id="padres">Padres</div></li>
+         <li class="menu_1"><div id="cursos">cursos</div></li>
+            <ul class="sub_menu" id="sub_menu" style="visibility: hidden;">
+                <div id="informatica">informatica</div>
+                <div id="marketing">marketing</div>
+            </ul>
+         <li class="menu_1" ><div id="sobre_nosotros">Sobre nosotros</div></li>
+     </ul>
+        
+    </nav>
+    <main>
+        <div class="grid-principal-content">
+            <div class="grid-item"><h1>¡Bienvenido a IA!</h1></div>
+            <div class="grid-item"><p>Bienvenido a IA, tu Centro de FP en Marketing y Publicidad. Enfocados en el futuro, te ofrecemos programas que desbloquean tu creatividad y habilidades estratégicas. Nuestra formación integra tecnologías actuales, aprendizaje práctico y profesores expertos de la industria. Con conexiones valiosas y mentores inspiradores, en IA te preparamos para liderar en la comunicación estratégica. Únete a nosotros y descubre el potencial de tu creatividad en el emocionante mundo de Marketing y Publicidad. ¡Bienvenido a tu viaje hacia el éxito en IA!</p></div>
+            <div class="grid-item"><img src="Multimedia/imagen centro.png" alt="imagen del centro" class="imagen-centro"></div>
+        </div>
+        <div class="grid-courses-processes">
+            <div class="grid-item-2"><h2>Nuestros cursos y procesos</h2></div>
+            <div class="grid-item-2">En nuestro centro tenemos varios cursos.</div>
+            <div class="grid-item-2" id="informatica1" >
+                <div><h3>Informatica</h3></div>
+                <div> El grado medio de informática proporciona habilidades esenciales en sistemas operativos, programación y redes, así como conocimientos en diseño web, gestión de bases de datos y seguridad informática. Con un equilibrio entre teoría y práctica, el programa incluye prácticas profesionales para preparar a los estudiantes para diversas funciones en el campo laboral.</div>
+                <img src="Multimedia/que-es-seguridad-informatica.jpg" alt="imagen informatica">
+            </div>
+            <div class="grid-item-2" id="marketing1">
+                <h3>Marketing y Publicidad</h3>    
+                <div> El grado medio aborda las últimas tendencias en marketing digital, creatividad publicitaria, analítica de datos y estrategias de branding. Los estudiantes aplicarán estos conocimientos en un proyecto final centrado en una estrategia integral para empresas reales o ficticias. Al graduarse, estarán equipados para liderar en un entorno empresarial dinámico.</div>
+                <img src="Multimedia/566457495_1280x72.jpg" alt="imagen de marketing y publicidad">
+            </div>
+        </div>
+        <script>
+            document.getElementById('informatica').addEventListener('click',function() {
+            alert =('HOLA');
+                window.location.href = 'cursos/informatica.html';
+            });
+            document.getElementById('marketing').addEventListener('click', function() { 
+                window.location.href = 'cursos/marketing.html';
+            });
+            document.getElementById('Alumnos').addEventListener('click', function() { 
+                window.location.href = 'Alunmnos/Alumnos.html';
+            });
+            document.getElementById('padres').addEventListener('click', function() { 
+                window.location.href = 'Padres/Padres.html';
+            });
+            document.getElementById('sobre_nosotros').addEventListener('click', function() { 
+                window.location.href = 'contacto.html';
+            });
+            document.getElementById('informatica1').addEventListener('click',function() {
+            alert =('HOLA');
+                window.location.href = 'cursos/informatica.html';
+            });
+            document.getElementById('marketing1').addEventListener('click', function() { 
+                window.location.href = 'cursos/marketing.html';
+            });
+        </script>
+        <script>
+            var submenu = document.getElementById('sub_menu');
+            document.getElementById('cursos').addEventListener('mouseover',function(){
+                submenu.style.visibility ='visible';
+            })
+            var submenu = document.getElementById('sub_menu');
+            document.getElementById('cursos').addEventListener('mouseout',function(){
+                submenu.style.visibility ='hidden';
+            })
+            document.getElementById('sub_menu').addEventListener('mouseover',function(){
+                sub_menu.style.visibility ='visible';
+            })
+            document.getElementById('sub_menu').addEventListener('mouseout',function(){
+                sub_menu.style.visibility ='hidden';
+            })
+        </script>
+    </main>
+    <footer class="footer">
+        <p class="footer_info"><b>© 2023. FP IA. <br>
+            C/ Doctor Ornilla 2</b>
+        </p>
+        <img src="Multimedia/Logotipo_del_Gobierno_Vasco_(Horizontal).svg.png" alt="logotipo gonbierno vasco" class="logogob">
+        <div class="div_rrss"><a href="https://www.instagram.com/" target="_blank"><img src="Multimedia/instagram.ico" alt="icono instagram " class="div_rrss-icon"></i></a> 
+        <a href="https://www.facebook.com/"target="_blank"><img src="Multimedia/facebook.ico" alt="icono facebook" class="div_rrss-icon"></i></i></a> 
+        <a href="https://twitter.com/"target="_blank"></i><img src="Multimedia/x-twitter.ico" alt="icono x twitter" class="div_rrss-icon"></a></div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="description" content="Resumen del contenido de la página">
+    <title>Bienvenido a Marketing</title>
+    <link rel="stylesheet" href="Marketing.css" type="text/css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <!-- Menú de la página web -->
+    <ul class="menu">
+        <li class="icono_inicio1"><a href="css/OIG.png"><img src="css/OIG.png" alt="" class="icono_inicio"></a></li>
+        <li class="menu_1"><div id="Alumnos">Alumnos</div></li>
+        <li class="menu_1"><div id="padres">Padres</div></li>
+        <li class="menu_1"><div id="cursos">cursos</div>
+            <ul class="sub_menu" id="sub_menu" style="visibility: hidden;">
+                <li><div id="informatica">informatica</div></li>
+                <li><div id="marketing">marketing</div></li>
+            </ul>
+        </li>
+        <li class="menu_1"><div id="sobre_nosotros">Sobre nosotros</div></li>
+    </ul>
+    
+    <script>
+        var submenu = document.getElementById('sub_menu');
+        document.getElementById('cursos').addEventListener('mouseover', function () {
+            submenu.style.visibility = 'visible';
+        });
+        document.getElementById('cursos').addEventListener('mouseout', function () {
+            submenu.style.visibility = 'hidden';
+        });
+        document.getElementById('sub_menu').addEventListener('mouseover', function () {
+            submenu.style.visibility = 'visible';
+        });
+        document.getElementById('sub_menu').addEventListener('mouseout', function () {
+            submenu.style.visibility = 'hidden';
+        });
+    </script>
+        <script>
+          document.getElementById('informatica').addEventListener('click',function() {
+          alert =('HOLA');
+              window.location.href = 'cursos/informatica.html';
+          });
+          document.getElementById('marketing').addEventListener('click', function() { 
+              window.location.href = 'cursos/marketing.html';
+          });
+          document.getElementById('Alumnos').addEventListener('click', function() { 
+              window.location.href = 'Alunmnos/Alumnos.html';
+          });
+          document.getElementById('padres').addEventListener('click', function() { 
+              window.location.href = 'Padres/Padres.html';
+          });
+          document.getElementById('sobre_nosotros').addEventListener('click', function() { 
+              window.location.href = 'contacto.html';
+          });
+          document.getElementById('informatica1').addEventListener('click',function() {
+          alert =('HOLA');
+              window.location.href = 'cursos/informatica.html';
+          });
+          document.getElementById('marketing1').addEventListener('click', function() { 
+              window.location.href = 'cursos/marketing.html';
+          });
+      </script>
+    <header><h2>¡Bienvenido a Marketing!</h2></header>
+
+    <main>
+        <section>
+            <article>
+                <h1><b>Explora el Marketing</b></h1>
+                <p>En esta página se pueden observar 3 creativas campañas que fueron virales en su momento. Haz clic sobre ellas para ir a un artículo explicativo de las campañas.</p>
+                <a href="https://www.diegocoquillat.com/la-ingeniosa-campana-publicitaria-de-mcdonalds-follow-the-arches/">
+                    <img src="Multimedia/mcdonald.png" id="mcdonalds" alt="McDonald's Campaign" />
+                </a>
+                <a href="https://www.openads.es/coca-cola-vs-pepsi-sobre-la-publicidad-viral-de-halloween-que-no-era-de-ninguna/">
+                    <img src="Multimedia/Pepsi.png" id="pepsi" alt="Pepsi Campaign" />
+                </a>
+                <a href="https://www.marketingdirecto.com/creacion/campanas-de-marketing/vicio-goiko-campana-jessica-goicoechea-competencia">
+                    <img src="Multimedia/Vicio.png" id="vicio" alt="Vicio Goiko Campaign" />
+                </a>
+            </article>
+        </section>
+    </main>
+
+    <footer><b>©2023 FP IA.</b></footer>
+</body>
+
+</html>
